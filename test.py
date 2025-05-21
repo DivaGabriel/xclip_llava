@@ -64,5 +64,9 @@ xclippoorout = vit16_out.pooler_output
 print(xclippoorout.shape)
 video_embed = xclippoorout.unsqueeze(0)  # ➜ [1, 1, 4096] 這樣才能餵 LLaVA
 print(video_embed .shape)
-
+LLaVA_model.model.mm_projector = LLaVA_model.model.mm_projector.to("cuda")
+projected = LLaVA_model.model.mm_projector(xclippoorout)
+print(projected.shape)
+video_embed_projected = projected.unsqueeze(0)  
+print(video_embed_projected.shape)
 '''
