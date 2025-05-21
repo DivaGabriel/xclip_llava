@@ -1,13 +1,13 @@
-test.ipynb是主要程式碼
-然後由於Video-LLaVA是從原本的地方clone下來的，好像不能直接push到我的repo上面
-因此還需要從原本的地方clone下來使用
+test.ipynb是主要程式碼  
+然後由於Video-LLaVA是從原本的地方clone下來的，好像不能直接push到我的repo上面  
+因此還需要從原本的地方clone下來使用  
 
 ## 🛠️ Requirements and Installation
 * Python >= 3.10
 * Pytorch == 2.0.1
 * CUDA Version >= 11.7
 * Install required packages:
-```
+```bash
 git clone https://github.com/DivaGabriel/xclip_llava.git
 #VideoLLaVA安裝
 git clone https://github.com/PKU-YuanGroup/Video-LLaVA
